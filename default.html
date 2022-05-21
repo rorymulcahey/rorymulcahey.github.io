@@ -7,15 +7,21 @@
     </head>
     
     <style> 
-    #navBar{
+    .navBar{
     position:fixed;
-    height:75px;
+    top: 0;
+        width:100%;
     }
+        .pageContent{
+        margin: 75px;
+        }
     </style>
     
+    
     <body>
+      <div class="navBar">
         <!--Header(start)-->
-        <table id="header" class="navBar" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
+        <table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
             <tr>
                 <td>
                     <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
@@ -91,7 +97,8 @@
             </tr>
         </table>
         <!--Header(end)-->
-
+        </div>
+        <div class="pageContent">
         <!--Home(start)-->
         <table id="home" border="1" width="100%" cellpadding="20" cellspacing="0" bgcolor="black">
             <tr>
@@ -595,5 +602,6 @@
             </tr>
         </table>
         <!--Footer2(end)-->
+            <div>
     </body>
 </html>
