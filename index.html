@@ -481,8 +481,9 @@
                                         </td>
                                     </tr>-->
                                     <tr>
-                                        <td width="30%" size="4" color="white">Email: </td>
-                                        <td width="70%">                                            
+                                        <td width="30%" ><font face="Verdana" size="4" color="white">Email: </font></td>
+                                        <td width="70%">
+                                            <div class="mt-3"></div>
                                             <button>
                                                 <font face="Verdana" size="4" color="black">
                                                     <a class="hiddenMail" data-email="addressATgmailDOTcom" style="text-decoration: none; cursor: pointer;" target="_blank" >
@@ -615,7 +616,7 @@ $(function () {
         $(this).removeClass("hiddenMail");
         $(this).html(email);
         $(this).removeAttr("style");
-        $(this).css({"color":"black"});
+        $(this).css({"color":"black", "cursor":"default"});
         //$(this).attr("href",email);
     });
 });
