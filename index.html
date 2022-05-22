@@ -481,12 +481,12 @@
                                         </td>
                                     </tr>-->
                                     <tr>
-                                        <td width="30%"></td>
+                                        <td width="30%">Email: </td>
                                         <td width="70%">                                            
                                             <button>
                                                 <font face="Verdana" size="4" color="black">
                                                     <a class="hiddenMail" data-email="addressATgmailDOTcom" style="text-decoration: none; cursor: pointer;" target="_blank" >
-                                                         <b>Click here to show email</b> &nbsp;➲
+                                                         <b>Click here to show!</b> &nbsp;➲
                                                     </a>                                                    
                                                 </font>
                                             </button>
@@ -614,6 +614,8 @@ $(function () {
         var email = $(this).attr("data-email").replace(/address/,'rorywmulcahey').replace(/AT/,'@').replace(/DOT/,'.');
         $(this).removeClass("hiddenMail");
         $(this).html(email);
+        $(this).style.cursor = "default";
+        $(this).style.color = "black";
         //$(this).attr("href",email);
     });
 });
