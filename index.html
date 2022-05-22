@@ -605,10 +605,18 @@
         </div>
     </body>
 <script>
-   var pressButton = document.getElementsByTagName("Submit")[0];
-   pressedButton.addEventListener("click", function (event) {
-      alert("You have pressed the button..........")
-   })
+$(window).load(function () {
+    console.log('load function');
+    $('.hiddenMail').on('click',function(event)
+    {
+        event.preventDefault();
+        $(this).off("click");
+        var email = $(this).attr("data-email").replace(/AT/,'@').replace(/DOT/,'.');
+        $(this).removeClass("hiddenMail");
+        $(this).html(email);
+        $(this).attr("href","mailto:"+email);
+    });
+});
           
 </script>    
 </html>
