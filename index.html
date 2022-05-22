@@ -6,6 +6,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script type='text/javascript'>
+            $(window).load(function () {
+                $('.hiddenMail').on('click',function(event)
+                {
+                    event.preventDefault();
+                    $(this).off("click");
+                    var email = $(this).attr("data-email").replace(/AT/,'@').replace(/DOT/,'.');
+                    $(this).removeClass("hiddenMail");
+                    $(this).html(email);
+                    $(this).attr("href","mailto:"+email);
+                });
+            });            
         </script>
         <title>Portfolio</title>
     </head>
@@ -581,12 +592,10 @@
                                 |
                             </td>
 
-
                             <td width="13%" valign="top">
-                                <b>Email</b>
-                                <a href="#" style="text-decoration: none;">
-                                    ➲
-                                </a>
+                                <a class="hiddenMail" data-email="ferencATdenesDOTcom" style="text-decoration: none;">
+                                    Show Email ➲
+                                </a>                                
                             </td>
 
                             <td>
