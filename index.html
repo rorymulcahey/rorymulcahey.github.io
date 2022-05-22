@@ -481,7 +481,7 @@
                                         </td>
                                     </tr>-->
                                     <tr>
-                                        <td width="30%">Email: </td>
+                                        <td width="30%" size="4" color="white">Email: </td>
                                         <td width="70%">                                            
                                             <button>
                                                 <font face="Verdana" size="4" color="black">
@@ -614,8 +614,8 @@ $(function () {
         var email = $(this).attr("data-email").replace(/address/,'rorywmulcahey').replace(/AT/,'@').replace(/DOT/,'.');
         $(this).removeClass("hiddenMail");
         $(this).html(email);
-        $(this).style.cursor = "default";
-        $(this).style.color = "black";
+        $(this).removeAttr("style");
+        $(this).css({"color":"black"})
         //$(this).attr("href",email);
     });
 });
