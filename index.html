@@ -431,7 +431,7 @@
                         <tr>
                             <td align="center" valign="top">
                                 <table border="0" width="50%" cellpadding="15" cellspacing="0" align="center" bgcolor="black">
-                                    <tr>
+                                    <!--<tr>
                                         <td width="30%">
                                             <hr color="black" />
                                             <font face="Verdana" size="4" color="#ffffff">
@@ -479,13 +479,15 @@
                                                 <textarea rows="5" cols="37"> </textarea>
                                             </font>
                                         </td>
-                                    </tr>
+                                    </tr>-->
                                     <tr>
                                         <td width="30%"></td>
-                                        <td width="70%">
-                                            <button type="Submit" onclick="sendEmail()">
+                                        <td width="70%">                                            
+                                            <button>
                                                 <font face="Verdana" size="4" color="black">
-                                                    <b>Submit</b>
+                                                    <a class="hiddenMail" data-email="addressATgmailDOTcom" style="text-decoration: none; cursor: pointer;" target="_blank" >
+                                                         <b>Click here to show email</b> &nbsp;➲
+                                                    </a>                                                    
                                                 </font>
                                             </button>
                                             <div class="mt-4"></div>
@@ -615,19 +617,6 @@ $(function () {
         //$(this).attr("href",email);
     });
 });
-    function sendEmail() {
-      Email.send({
-        Host: "smtp.office365.com",
-        Username: "rorymulcahey.github.io@outlook.com",
-        Password: "",
-        To: 'rorymulcahey.github.io@outlook.com',
-        From: "rorymulcahey.github.io@outlook.com",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-      })
-        .then(function (message) {
-          alert("mail sent successfully")
-        });
-    }          
+         
 </script>    
 </html>
