@@ -5,20 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script type='text/javascript'>
-            $(window).load(function () {
-                alert("test");
-                $('.hiddenMail').on('click',function(event)
-                {
-                    event.preventDefault();
-                    $(this).off("click");
-                    var email = $(this).attr("data-email").replace(/AT/,'@').replace(/DOT/,'.');
-                    $(this).removeClass("hiddenMail");
-                    $(this).html(email);
-                    $(this).attr("href","mailto:"+email);
-                });
-            });            
-        </script>
         <title>Portfolio</title>
     </head>
     
@@ -617,4 +603,23 @@
         <!--Footer1(end)--> 
         </div>
     </body>
+<script>
+   var pressButton = document.getElementsByTagName("Submit")[0];
+   pressedButton.addEventListener("click", function (event) {
+      alert("You have pressed the button..........")
+   });
+    
+    $(window).load(function () {
+        alert("test");
+        $('.hiddenMail').on('click',function(event)
+        {
+            event.preventDefault();
+            $(this).off("click");
+            var email = $(this).attr("data-email").replace(/AT/,'@').replace(/DOT/,'.');
+            $(this).removeClass("hiddenMail");
+            $(this).html(email);
+            $(this).attr("href","mailto:"+email);
+        });
+    });            
+</script>    
 </html>
