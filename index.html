@@ -483,7 +483,7 @@
                                     <tr>
                                         <td width="30%"></td>
                                         <td width="70%">
-                                            <button type="Submit">
+                                            <button type="Submit" onclick="sendEmail()">
                                                 <font face="Verdana" size="4" color="black">
                                                     <b>Submit</b>
                                                 </font>
@@ -615,6 +615,19 @@ $(function () {
         //$(this).attr("href",email);
     });
 });
-          
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.office365.com",
+        Username: "rorymulcahey.github.io@outlook.com",
+        Password: "dummyemail#123",
+        To: 'rorymulcahey.github.io@outlook.com',
+        From: "rorymulcahey.github.io@outlook.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }          
 </script>    
 </html>
