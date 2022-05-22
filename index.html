@@ -580,7 +580,7 @@
                             </td>
 
                             <td width="13%" valign="top">                                
-                                <a class="hiddenMail" data-email="rorywmulcaheyATgmailDOTcom" style="text-decoration: none;">
+                                <a class="hiddenMail" data-email="addressATgmailDOTcom" style="text-decoration: none;">
                                      <b>Email</b> &nbsp;➲
                                 </a>                                
                             </td>
@@ -610,7 +610,7 @@ $(function () {
     {
         event.preventDefault();
         $(this).off("click");
-        var email = $(this).attr("data-email").replace(/AT/,'@').replace(/DOT/,'.');
+        var email = $(this).attr("data-email").replace(/address/,'rorywmulcahey').replace(/AT/,'@').replace(/DOT/,'.');
         $(this).removeClass("hiddenMail");
         $(this).html(email);
         $(this).attr("href","mailto:"+email);
