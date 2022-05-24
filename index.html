@@ -1,633 +1,659 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">        
-        <title>Portfolio</title>
-    </head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>   
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <style> 
-        body{
-            margin: 0px;
-        }
-        
-        .navBar{
-            position:fixed;
-            top: 0;
-            width:100%;
-        }
 
-        .pageContent{
-            margin: 75px;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Portfolio</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<style>
+  body {
+    margin: 0px;
+  }
 
-        .footerBar{
-            position:fixed;
-            bottom: 0;
-            width:100%;        
-        }
-    </style>
-    
-    
-    <body> 
-      <div class="navBar">
-        <!--Header(start)-->
-        <table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#4CAF50">
-            <tr>
-                <td>
-                    <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
-                        <tr>
-                            <td></td>
+  .navBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    border: 0;
+  }
 
-                            <td width="28%">                                
-                                    <a href="https://rorymulcahey.github.io/" style="text-decoration: none;"> 
-                                       <font face="Comic sans MS" size="6" color="black">
-                                            <b>Rory Mulcahey</b>
-                                        </font>
-                                    </a>                                
-                            </td>
+  .pageContent {
+    margin: 75px;
+  }
 
-                            <td width="2%"></td>
+  .footerBar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    border: 0;
+  }
 
-                            <td>
-                                <a href="#home" style="text-decoration: none;">
-                                    <font face="Verdana" size="5" color="black">
-                                        Home
-                                    </font>
-                                </a>
-                            </td>
+  .col-1-5 {
+    width: 12.5%
+  }
 
-                            <td>
-                                |
-                            </td>
+  .home {
+    background-color: #c2c0c3;
+    border: 1;
+    width: 100%;
+  }
 
-                            <td>
-                                <a href="#about" style="text-decoration: none;">
-                                    <font face="Verdana" size="5" color="black">
-                                        About
-                                    </font>
-                                </a>
-                            </td>
+  .about {
+    background-color: black;
+    width: 100%;
+  }
 
-                            <td>
-                                |
-                            </td>
+  .projects {
+    background-color: #c2c0c3;
+    border: 1;
+    width: 100%;
+  }
 
-                            <td>
-                                <a href="#projects" style="text-decoration: none;">
-                                    <font face="Verdana" size="5" color="black">
-                                        Projects
-                                    </font>
-                                </a>
-                            </td>
+  .career {
+    background-color: black;
+    width: 100%;
+  }
 
-                            <td>
-                                |
-                            </td>
+  .contact {
+    background-color: #c2c0c3;
+    border: 1;
+    width: 100%;
+  }
 
-                            <td>
-                                <a href="#career" style="text-decoration: none;">
-                                    <font face="Verdana" size="5" color="black">
-                                        Career
-                                    </font>
-                                </a>
-                            </td>
+  .footer {
+    background-color: black;
+    width: 100%;
+  }
+</style>
 
-                            <td>
-                                |
-                            </td>
+<body>
+  <!--Header(start)-->
+  <div class="navBar row pt-3 pb-3">
+    <div class="col-1"></div>
 
-                            <td>
-                                <a href="#contact" style="text-decoration: none;">
-                                    <font face="Verdana" size="5" color="black">
-                                        Contact
-                                    </font>
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <!--Header(end)-->
-        </div>        
-    <div class="container-fluid">   
-        <div class="pageContent">
-        <!--Home(start)-->
-        <table id="home" border="1" width="100%" cellpadding="20" cellspacing="0" bgcolor="#c2c0c3">
-            <tr>
-                <td>
-                    <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
-                        <tr>
-                            <td align="center" valign="middle">
-                                <div class="mt-3"></div>
-                                <h3>
-                                    <font face="Times New Roman" size="6" color="black">
-                                        Welcome!
-                                    </font>
-                                </h3>
+    <div class="col-4">
+      <a href="https://rorymulcahey.github.io/" style="text-decoration: none;">
+        <font face="Comic sans MS" size="6" color="black">
+          <b>Rory Mulcahey</b>
+        </font>
+      </a>
+    </div>
 
-                                <h2>
-                                    <font face="Verdana" size="6" color="#4CAF50">
-                                        <!-- Freelance Programmer -->
-                                    </font>
-                                </h2>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <!--Home(end)-->
 
-        <!--About(start)-->
-        <table id="about" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
-            <tr>
-                <td>
-                    <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
-                        <tr>
-                            <td height="180" align="center" valign="middle" colspan="2">
-                                <font face="Verdana" size="7" color="#4CAF50">
-                                    About Me
-                                </font>
-                                <div class="mt-3"></div>
-                            </td>
-                        </tr>
 
-                        <tr>
-                            <td width="40%">
-                                <img src="https://raw.githubusercontent.com/rorymulcahey/rorymulcahey.github.io/master/RoryPhoto.jpg" alt="Photo of Rory" width="400"/>
-                            </td>
+    <div class="col-1">
+      <a href="#home" style="text-decoration: none;">
+        <font face="Verdana" size="5" color="black">
+          Home
+        </font>
+      </a>
+    </div>
 
-                            <td width="60%">
-                                <font face="Verdana" size="4" color="white">
-                                    Hello and thank you for visiting my webpage; allow me to introduce myself and share my background.
-                                    <div class="mt-3"></div>
-                                    
-                                    My name is Rory Mulcahey. I am a long-time computer nerd and have a passion for understanding how things work. 
-                                    I began my early career with a focus on the physical world of mechanical engineering. Then, I started my programming journey through
-                                    curiosity for the subject, and learned initially through self-taught practices. This led to my formal software education and current career
-                                    as a software developer.
-                                    <div class="mt-3"></div>
-                                    
-                                    I received my master's degree in software engineering from Penn State. I also have a bachelor's in mechanical engineering from
-                                    California State University, Fullerton and an associate's in math and science from Fullerton College. I enjoy math and physics,
-                                    which is what drove my early career decisions. Then I found the logic puzzles of computer science, which fuels my passion today. 
-                                    <div class="mt-3"></div>
-                                    
-                                    Look forward to speaking with you soon!
-                                    <div class="mt-1"></div>
-                                    <b>RM</b>
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="mt-3"></div>
-                </td>
-            </tr>
-        </table>
-        <!--About(end)-->
+    <div style="width: 1%">
+      |
+    </div>
 
-        <!--Projects(start)-->
-        <table id="projects" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
-            <tr>
-                <td>
-                    <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
-                        <tr>
-                            <td height="180" align="center" valign="middle" colspan="2">
-                                <font face="Verdana" size="7" color="black">
-                                    Projects
-                                </font>
-                                <div class="mt-3"></div>
-                            </td>
-                        </tr>
+    <div class="col-1">
+      <a href="#about" style="text-decoration: none;">
+        <font face="Verdana" size="5" color="black">
+          About
+        </font>
+      </a>
+    </div>
 
-                        <tr>
-                            <td height="10">
-                                <font face="Times New Roman" size="5" color="black">
-                                    <ul>
+    <div style="width: 1%">
+      |
+    </div>
 
-                                        <li>
-                                            <div class="row">
-                                                <div class="col-4">
-                                                Covid Tracker
-                                                    <ul>
-                                                        <li>
-                                                            Tech Stack:
-                                                            <ul>
-                                                                <li>
-                                                                    Python Pandas
-                                                                </li>
-                                                                 <li>
-                                                                    Python Flask 
-                                                                </li>
-                                                                <li>
-                                                                    ArcGIS JavaScript
-                                                                </li>
-                                                            </ul>
-                                                        </li>                                                          
-                                                        <li>
-                                                            <a href="https://bitbucket.org/psusweng894capstone/psucovidtracker/src/development/" style="text-decoration: none;" target="_blank">
-                                                            Source Code
-                                                            </a>
-                                                        </li>                                                       
-                                                    </ul>
-                                                </div>
-                                                <div class="col-8">
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/GP4Z_rmglQM" title="YouTube video player" frameborder="0" 
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                </div>
-                                            </div>                                            
-                                        </li>
+    <div class="col-1">
+      <a href="#projects" style="text-decoration: none;">
+        <font face="Verdana" size="5" color="black">
+          Projects
+        </font>
+      </a>
+    </div>
 
-                                        
-                                        <li>
-                                            <div class="row mt-5">
-                                                <div class="col-4">
-                                                Poker Hand Calculator
-                                                    <ul>
-                                                        <li>
-                                                            Tech Stack:
-                                                            <ul>
-                                                                <li>
-                                                                    Python 3.6
-                                                                </li>
-                                                                <li>
-                                                                    PyQT
-                                                                </li>
-                                                            </ul>
-                                                        </li>                                                     
-                                                        <li>
-                                                            <a href="https://github.com/rorymulcahey/Poker" style="text-decoration: none;" target="_blank">
-                                                            Source Code
-                                                            </a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://www.dropbox.com/s/t9nih8lsm4lnor0/texasHoldemPoker.exe?dl=0" style="text-decoration: none;" target="_blank">
-                                                            Desktop App
-                                                            </a>
-                                                        </li>                                                        
-                                                    </ul>
-                                                </div>
-                                                <div class="col-8">
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/DUYfo6UiYMU" title="YouTube video player" frameborder="0" 
-                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                </div>
-                                            </div>
-                                        </li>
+    <div style="width: 1%">
+      |
+    </div>
 
-                                        <li>
-                                            <div class="row mt-5">
-                                                <div class="col-4">
-                                                API Song Lookup
-                                                    <ul>
-                                                        <li>
-                                                            Tech Stack: Python
-                                                        </li>                                                          
-                                                        <li>
-                                                            <a href="https://github.com/rorymulcahey/SongPull" style="text-decoration: none;" target="_blank">
-                                                            Source Code
-                                                            </a>
-                                                        </li>                                                       
-                                                    </ul>
-                                                </div>
-                                                <div class="col-8"></div>
-                                            </div>                                              
-                                        </li>
+    <div class="col-1">
+      <a href="#career" style="text-decoration: none;">
+        <font face="Verdana" size="5" color="black">
+          Career
+        </font>
+      </a>
+    </div>
 
-                                    </ul>
-                                <div class="mt-4"></div>
-                                </font>
-                            </td>
+    <div style="width: 1%">
+      |
+    </div>
 
-                            <td>
-                                <!--<img src="img.png" alt="Project" width="75%" /> -->
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <!--Projects(end)-->
+    <div class="col-1">
+      <a href="#contact" style="text-decoration: none;">
+        <font face="Verdana" size="5" color="black">
+          Contact
+        </font>
+      </a>
+    </div>
 
-        <!--Career(start)-->
-        <table id="career" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
-            <tr>
-                <td>
-                    <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
-                        <tr>
-                            <td height="180" align="center" valign="middle">
-                                <font face="Verdana" size="7" color="#4CAF50">
-                                    Career
-                                    <div class="mt-3"></div>
-                                </font>
-                            </td>
-                        </tr>
+    <!--Header(end)-->
+  </div>
+  <div class="container-fluid">
+    <div class="pageContent">
+      <!--Home(start)-->
+      <div id="home" class="home row pt-4 pb-4">
+        <div border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+          <div class="row">
+            <div align="center" valign="middle">
+              <div class="mt-3"></div>
+              <h3>
+                <font face="Times New Roman" size="6" color="black">
+                  Welcome!
+                </font>
+              </h3>
 
-                        <tr>
-                            <td>
-                                <font face="Verdana" size="4" color="white">
-                                    <ul>
-                                        <li>
-                                            <b>Cavco Software Engineer</b>
-                                            <ul>
-                                                <li>
-                                                    August 2021 - Present
-                                                </li>
-                                                <li>
-                                                    Full stack web developer
-                                                </li>
-                                                 <li>
-                                                    Build the intra-company employee website 
-                                                </li>
-                                                 <li>
-                                                    Upgrade legacy code to current standards
-                                                </li>                                                
-                                                <li>
-                                                    Tech stack: C#, ASP.NET, MSSQL, Bootstrap
-                                                </li>                                           
-                                            </ul>
-                                        </li>
+              <h2>
+                <font face="Verdana" size="6" color="#4CAF50">
+                  <!-- Freelance Programmer -->
+                </font>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Home(end)-->
 
-                                        <li>
-                                            <div class="mt-3"></div>
-                                            <b>Fundamentals of Engineering License</b>
-                                            <ul>
-                                                <li>
-                                                    March 2019 - Present
-                                                </li>
-                                                <li>
-                                                    <a href="https://account.ncees.org/rn/1988359-1186634-8bf6d3e" target="_blank"> NCEES Certification</a>
-                                                </li>
-                                            </ul>
-                                        </li>
+      <!--About(start)-->
+      <div id="about" class="about row pt-4 pb-4">
 
-                                        <li>
-                                            <div class="mt-3"></div>
-                                            <b>Vanderweil Engineers</b>
-                                            <ul>
-                                                <li>
-                                                    January 2019 - August 2021
-                                                </li>
-                                                <li>
-                                                    Mechanical Engineer 
-                                                </li>
-                                                <li>
-                                                    Analyze energy load data
-                                                </li>                                                
-                                                <li>
-                                                    Build smart excel spreadsheets and automate tasks
-                                                </li>  
-                                                <li>
-                                                    Design and produce CAD deliverables
-                                                </li>
-                                            </ul>
-                                        </li>
+        <div border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+          <div class="row pt-5 pb-5">
+            <div>
+              <font face="Verdana" size="7" color="#4CAF50">
+                About Me
+              </font>
+              <div class="mt-3"></div>
+            </div>
+          </div>
 
-                                        <li>
-                                            <div class="mt-3"></div>
-                                            <b>Bosco Tech High School</b>
-                                            <ul>
-                                                <li>
-                                                    August 2017 - August 2018
-                                                </li>
-                                                <li>
-                                                    Technology Professor
-                                                </li>
-                                                <li>
-                                                    Teach CAD programming and robotics
-                                                </li>  
-                                                <li>
-                                                    Manage computer lab and machine shop (Lathe/Mill)
-                                                </li>                                                
-                                                <div class="mt-4"></div>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <!--Career(end)-->
+          <div class="row">
+            <div class="col-5 ps-5">
+              <img src="https://raw.githubusercontent.com/rorymulcahey/rorymulcahey.github.io/master/RoryPhoto.jpg"
+                alt="Photo of Rory" width="400" />
+            </div>
 
-        <!--Contact(start)-->
-        <table id="contact" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
-            <tr>
-                <td>
-                    <table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
-                        <tr>
-                            <td height="180" align="center" valign="middle" colspan="2">
-                                <font face="Verdana" size="7" color="black">
-                                    Contact
-                                </font>                                
-                            </td>
-                        </tr>
+            <div class="col-6 pe-2">
+              <font face="Verdana" size="4" color="white">
+                Hello and thank you for visiting my webpage; allow me to introduce myself and share my background.
+                <div class="mt-3"></div>
 
-                        <tr>
-                            <td align="center" valign="top">
-                                <table border="0" width="50%" cellpadding="15" cellspacing="0" align="center" bgcolor="black" style="border-radius: 13px; box-shadow: 0 0 3px 5px white;">
-                                    <!--<tr>
-                                        <td width="30%">
+                My name is Rory Mulcahey. I am a long-time computer nerd and have a passion for understanding how
+                things work.
+                I began my early career with a focus on the physical world of mechanical engineering. Then, I
+                started my programming journey through
+                curiosity for the subject, and learned initially through self-taught practices. This led to my
+                formal software education and current career
+                as a software developer.
+                <div class="mt-3"></div>
+
+                I received my master's degree in software engineering from Penn State. I also have a bachelor's in
+                mechanical engineering from
+                California State University, Fullerton and an associate's in math and science from Fullerton
+                College. I enjoy math and physics,
+                which is what drove my early career decisions. Then I found the logic puzzles of computer science,
+                which fuels my passion today.
+                <div class="mt-3"></div>
+
+                Look forward to speaking with you soon!
+                <div class="mt-1"></div>
+                <b>RM</b>
+              </font>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3"></div>
+
+      </div>
+      <!--About(end)-->
+
+      <!--Projects(start)-->
+      <div id="projects" class="projects row pt-5 pb-5">
+        <div class="row pb-5">
+          <div height="180" align="center" valign="middle" colspan="2">
+            <font face="Verdana" size="7" color="black">
+              Projects
+            </font>
+            <div class="mt-3"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div height="10">
+            <font face="Times New Roman" size="5" color="black">
+              <ul>
+
+                <li>
+                  <div class="row">
+                    <div class="col-4">
+                      Covid Tracker
+                      <ul>
+                        <li>
+                          Tech Stack:
+                          <ul>
+                            <li>
+                              Python Pandas
+                            </li>
+                            <li>
+                              Python Flask
+                            </li>
+                            <li>
+                              ArcGIS JavaScript
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="https://bitbucket.org/psusweng894capstone/psucovidtracker/src/development/"
+                            style="text-decoration: none;" target="_blank">
+                            Source Code
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-8">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/GP4Z_rmglQM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </li>
+
+
+                <li>
+                  <div class="row mt-5">
+                    <div class="col-4">
+                      Poker Hand Calculator
+                      <ul>
+                        <li>
+                          Tech Stack:
+                          <ul>
+                            <li>
+                              Python 3.6
+                            </li>
+                            <li>
+                              PyQT
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="https://github.com/rorymulcahey/Poker" style="text-decoration: none;"
+                            target="_blank">
+                            Source Code
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.dropbox.com/s/t9nih8lsm4lnor0/texasHoldemPoker.exe?dl=0"
+                            style="text-decoration: none;" target="_blank">
+                            Desktop App
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-8">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/DUYfo6UiYMU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="row mt-5">
+                    <div class="col-4">
+                      API Song Lookup
+                      <ul>
+                        <li>
+                          Tech Stack: Python
+                        </li>
+                        <li>
+                          <a href="https://github.com/rorymulcahey/SongPull" style="text-decoration: none;"
+                            target="_blank">
+                            Source Code
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-8"></div>
+                  </div>
+                </li>
+
+              </ul>
+              <div class="mt-4"></div>
+            </font>
+          </div>
+
+          <div>
+            <!--<img src="img.png" alt="Project" width="75%" /> -->
+          </div>
+        </div>
+      </div>
+      <!--Projects(end)-->
+
+      <!--Career(start)-->
+      <div id="career" class="career row pt-4 pb-4">
+        <div class="row pt-5 pb-5">
+          <div height="180" align="center" valign="middle">
+            <font face="Verdana" size="7" color="#4CAF50">
+              Career
+              <div class="mt-3"></div>
+            </font>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <font face="Verdana" size="4" color="white">
+              <ul style="align-content: center">
+                <li>
+                  <b>Cavco Software Engineer</b>
+                  <ul>
+                    <li>
+                      August 2021 - Present
+                    </li>
+                    <li>
+                      Full stack web developer
+                    </li>
+                    <li>
+                      Build the intra-company employee website
+                    </li>
+                    <li>
+                      Upgrade legacy code to current standards
+                    </li>
+                    <li>
+                      Tech stack: C#, ASP.NET, MSSQL, Bootstrap
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="mt-3"></div>
+                  <b>Fundamentals of Engineering License</b>
+                  <ul>
+                    <li>
+                      March 2019 - Present
+                    </li>
+                    <li>
+                      <a href="https://account.ncees.org/rn/1988359-1186634-8bf6d3e" target="_blank"> NCEES
+                        Certification</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="mt-3"></div>
+                  <b>Vanderweil Engineers</b>
+                  <ul>
+                    <li>
+                      January 2019 - August 2021
+                    </li>
+                    <li>
+                      Mechanical Engineer
+                    </li>
+                    <li>
+                      Analyze energy load data
+                    </li>
+                    <li>
+                      Build smart excel spreadsheets and automate tasks
+                    </li>
+                    <li>
+                      Design and produce CAD deliverables
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <div class="mt-3"></div>
+                  <b>Bosco Tech High School</b>
+                  <ul>
+                    <li>
+                      August 2017 - August 2018
+                    </li>
+                    <li>
+                      Technology Professor
+                    </li>
+                    <li>
+                      Teach CAD programming and robotics
+                    </li>
+                    <li>
+                      Manage computer lab and machine shop (Lathe/Mill)
+                    </li>
+                    <div class="mt-4"></div>
+                  </ul>
+                </li>
+              </ul>
+            </font>
+          </div>
+        </div>
+      </div>
+      <!--Career(end)-->
+
+      <!--Contact(start)-->
+      <div id="contact" class="contact row pt-4 pb-4">
+
+        <div border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+          <div class="row pt-5 pb-5">
+            <div height="180" align="center" valign="middle" colspan="2">
+              <font face="Verdana" size="7" color="black">
+                Contact
+              </font>
+            </div>
+          </div>
+
+          <div class="row">
+            <div align="center" valign="top">
+              <div style="border-radius: 13px; box-shadow: 0 0 3px 5px white; background-color: black; width: 50%">
+                <!--<div class="row">
+                                        <div width="30%">
                                             <hr color="black" />
                                             <font face="Verdana" size="4" color="#ffffff">
                                                 Name
                                             </font>
-                                        </td>
-                                        <td width="70%">
+                                        </div>
+                                        <div width="70%">
                                             <font face="Verdana" size="4" color="#ffffff">
                                                 <input type="text" size="40" />
                                             </font>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="30%">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div width="30%">
                                             <font face="Verdana" size="4" color="#ffffff">
                                                 Email
                                             </font>
-                                        </td>
-                                        <td width="70%">
+                                        </div>
+                                        <div width="70%">
                                             <font face="Verdana" size="4" color="#ffffff">
                                                 <input type="email" size="40" />
                                             </font>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="30%">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div width="30%">
                                             <font face="Verdana" size="4" color="#ffffff">
                                                 Phone
                                             </font>
-                                        </td>
-                                        <td width="70%">
+                                        </div>
+                                        <div width="70%">
                                             <font face="Verdana" size="4" color="#ffffff">
                                                 <input type="number" size="12" />
                                             </font>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="30%">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div width="30%">
                                             <font face="Verdana" size="4" color="#ffffff">
                                                 Message
                                             </font>
-                                        </td>
-                                        <td width="70%">
+                                        </div>
+                                        <div width="70%">
                                             <font face="Verdana" size="4" color="#ffffff">
                                                 <textarea rows="5" cols="37"> </textarea>
                                             </font>
-                                        </td>
-                                    </tr>-->
-                                    <tr>
-                                        <td>
-                                            <div class=""></div> 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="30%" ><font face="Verdana" size="4" color="white" style="vertical-align: inherit; padding-left: 5px;">Email: </font></td>
-                                        <td width="70%">                                                                                       
-                                                <font face="Verdana" size="4" color="black" bgcolor="white">
-                                                    <a class="hiddenMail" data-email="addressATgmailDOTcom" style="text-decoration: none; cursor: pointer;" target="_blank" >
-                                                         <b>Click here to show!</b>
-                                                    </a>                                                    
-                                                </font>                                            
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class=""></div> 
-                                        </td>
-                                    </tr>                                    
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"></td>
-                        </tr>
-                    </table>
-                    <div class="mt-5"></div>
-                </td>
-            </tr>
-        </table>
-        <!--Contact(end)-->
-
-        <!--Footer2(start)-->
-        <table id="footer" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="black">
-            <tr>
-                <td>
-                    <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
-                        <tr>
-                            <td width="65%" valign="top">
-                                <font face="Verdana" color="#4CAF50" size="4">
-                                    ©Copyright 2022 by Rory Mulcahey. All rights reserved.
-                                </font>
-                            </td>
-
-                            <td width="25%">
-                                <font face="arial" color="black" size="5">
-                                    <a href="#home" style="text-decoration: none;">
-                                        <font face="Verdana" color="#4CAF50" size="5">
-                                            <b>GO TO TOP</b>
-                                        </font>
-                                    </a>
-                                </font>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <!--Footer2(end)-->
-    </div>  
-      </div>
-        <div class=footerBar>
-        <!--Footer1(start)-->
-        <table id="footer" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#4CAF50" style="position:fixed; bottom: 0; width: 100%">
-            <tr>
-                <td>
-                    <table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
-                        <tr>
-                            <td width="13%" valign="top">                                
-                                <a href="https://www.linkedin.com/in/rorywmulcahey/" style="text-decoration: none;" target="_blank">
-                                   <b>LinkedIn</b> ➲
-                                </a>
-                            </td>
-
-                            <td>
-                                |
-                            </td>
-
-                            <td width="11%" valign="top">                                
-                                <a href="https://github.com/rorymulcahey/" style="text-decoration: none;" target="_blank">
-                                  <b>GitHub</b>  ➲
-                                </a>
-                            </td>
-
-                            <td>
-                                |
-                            </td>
-
-                            <td width="13%" valign="top">                                
-                                <a href="https://bitbucket.org/roardog/" style="text-decoration: none;" target="_blank">
-                                  <b>BitBucket</b>  ➲
-                                </a>
-                            </td>
-
-                            <td>
-                                |
-                            </td>
-
-
-                            <td width="11%" valign="top">                                
-                                <a href="https://twitter.com/RoryMulcahey" style="text-decoration: none;" target="_blank">
-                                  <b>Twitter</b>  ➲
-                                </a>
-                            </td>
-
-                            <td>
-                                |
-                            </td>
-
-                            <td width="13%" valign="top">                                
-                                <a class="hiddenMail" data-email="addressATgmailDOTcom" style="text-decoration: none; cursor: pointer;" target="_blank" >
-                                     <b>Email</b> &nbsp;➲
-                                </a>                                
-                            </td>
-
-                            <td>
-                                |
-                            </td>
-
-                            <td width="15%" valign="top">                                
-                                <a href="https://stackoverflow.com/users/10039469/rory" style="text-decoration: none;" target="_blank">
-                                  <b>Stack Overflow</b>  ➲
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <!--Footer1(end)--> 
+                                        </div>
+                                    </div>-->
+                <div class="row">
+                  <div>
+                    <div class=""></div>
+                  </div>
+                </div>
+                <div class="row pt-5 pb-5">
+                  <div style="width:30%">
+                    <font face="Verdana" size="4" color="white" style="vertical-align: inherit; padding-left: 5px;">
+                      Email: </font>
+                  </div>
+                  <div style="width:70%">
+                    <font face="Verdana" size="4" color="black" bgcolor="white">
+                      <a class="hiddenMail" data-email="addressATgmailDOTcom"
+                        style="text-decoration: none; cursor: pointer;" target="_blank">
+                        <b>Click here to show!</b>
+                      </a>
+                    </font>
+                  </div>
+                </div>
+                <div class="row">
+                  <div>
+                    <div class=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div colspan="2"></div>
+          </div>
         </div>
-            
-    </body>
+        <div class="mt-5"></div>
+      </div>
+      <!--Contact(end)-->
+
+      <!--Footer2(start)-->
+      <div id="footer" class="footer row pt-3 pb-2">
+        <div class="row">
+          <div>
+            <div border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+              <div class="row">
+                <div style="width:65%" valign="top">
+                  <font face="Verdana" color="#4CAF50" size="4">
+                    ©Copyright 2022 by Rory Mulcahey. All rights reserved.
+                  </font>
+                </div>
+
+                <div style="width:25%">
+                  <font face="arial" color="black" size="5">
+                    <a href="#home" style="text-decoration: none;">
+                      <font face="Verdana" color="#4CAF50" size="5">
+                        <b>GO TO TOP</b>
+                      </font>
+                    </a>
+                  </font>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Footer2(end)-->
+    </div>
+  </div>
+  <!--Footer(start)-->
+  <div class="footerBar row pt-2 pb-2">
+    <div class="col-1"></div>
+
+    <div class="col-1-5 text-center">
+      <a href="https://www.linkedin.com/in/rorywmulcahey/" style="text-decoration: none;" target="_blank">
+        <b>LinkedIn</b> ➲
+      </a>
+    </div>
+
+    <div style="width:1%">
+      |
+    </div>
+
+    <div class="col-1 text-center">
+      <a href="https://github.com/rorymulcahey/" style="text-decoration: none;" target="_blank">
+        <b>GitHub</b> ➲
+      </a>
+    </div>
+
+    <div style="width:1%">
+      |
+    </div>
+
+    <div class="col-1-5 text-center">
+      <a href="https://bitbucket.org/roardog/" style="text-decoration: none;" target="_blank">
+        <b>BitBucket</b> ➲
+      </a>
+    </div>
+
+    <div style="width:1%">
+      |
+    </div>
+
+
+    <div class="col-1 text-center">
+      <a href="https://twitter.com/RoryMulcahey" style="text-decoration: none;" target="_blank">
+        <b>Twitter</b> ➲
+      </a>
+    </div>
+
+    <div style="width:1%">
+      |
+    </div>
+
+    <div class="col-2 text-center">
+      <a class="hiddenMail" data-email="addressATgmailDOTcom" style="text-decoration: none; cursor: pointer;"
+        target="_blank">
+        <b>Email</b> &nbsp;➲
+      </a>
+    </div>
+
+    <div style="width:1%">
+      |
+    </div>
+
+    <div class="col-2 text-center">
+      <a href="https://stackoverflow.com/users/10039469/rory" style="text-decoration: none;" target="_blank">
+        <b>Stack Overflow</b> ➲
+      </a>
+    </div>
+  </div>
+  <!--Footer(end)-->
+
+</body>
 <script>
-$(function () {
-    $('.hiddenMail').on('click',function(event)
-    {
-        event.preventDefault();
-        $(this).off("click");
-        var email = $(this).attr("data-email").replace(/address/,'rorywmulcahey').replace(/AT/,'@').replace(/DOT/,'.');
-        $(this).removeClass("hiddenMail");
-        $(this).html(email);
-        $(this).removeAttr("style");
-        $(this).css({"color":"white", "cursor":"auto", "text-decoration": "none" });
-        //$(this).attr("href",email);
+  $(function () {
+    $('.hiddenMail').on('click', function (event) {
+      event.preventDefault();
+      $(this).off("click");
+      var email = $(this).attr("data-email").replace(/address/, 'rorywmulcahey').replace(/AT/, '@').replace(/DOT/, '.');
+      $(this).removeClass("hiddenMail");
+      $(this).html(email);
+      $(this).removeAttr("style");
+      $(this).css({ "color": "white", "cursor": "auto", "text-decoration": "none" });
+      //$(this).attr("href",email);
     });
-});
-         
-</script>    
+  });
+
+</script>
+
 </html>
