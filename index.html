@@ -29,6 +29,19 @@
     .pageContent {
       margin: 75px;
     }
+
+    .headerFont{
+      font-size:xx-large;
+    }
+
+    .headerLargeDiv{
+      padding-right: 1.5rem;
+      margin-left: 1rem;
+    }
+
+    .homeLargeScreen{
+      padding-top: 1.5rem;
+    }
   }
 
   .footerBar {
@@ -115,8 +128,12 @@
       /* display: flex; */
       align-items: bottom;
       justify-content: center;
+      text-align: center;
     }
 
+    .shrinkHeader{
+      font-size: x-large;      
+    }
     .shrinkFont {
       font-size: small;
     }
@@ -128,11 +145,11 @@
   <div class="navBar row pt-3 pb-3">
     <div class="col-1"></div>
 
-    <div class="col-xs-9 col-md-4 centerName pe-3 ms-4">
+    <div class="col-xs-9 col-md-4 centerName headerLargeDiv">
       <a href="https://rorymulcahey.github.io/" style="text-decoration: none;">
-        <font face="Comic sans MS" size="6" color="black">
-          <b>Rory Mulcahey</b>
-        </font>
+        <!-- <font class="shrinkFontHeader" face="Comic sans MS" size="6" color="black"> -->
+          <span class="shrinkHeader headerFont" style="color:black; font-family: Times New Roman, Times, serif" ><b>Rory Mulcahey</b></span>
+        <!-- </font> -->
       </a>
 
       <a href="https://www.linkedin.com/in/rorywmulcahey/" style="text-decoration: none;" target="_blank">
@@ -224,7 +241,7 @@
   <div class="container-fluid">
     <div class="pageContent">
       <!--Home(start)-->
-      <div id="home" class="home row pt-4 pb-4">
+      <div id="home" class="home row homeLargeScreen pb-4">
         <div border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
           <div class="row">
             <div align="center" valign="middle">
