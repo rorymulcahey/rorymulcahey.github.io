@@ -29,6 +29,30 @@
     border: 0;
     margin-left: 0px;
   }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-buttons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .social-buttons a {
+      width: 30px;
+      height: 30px;
+      margin: 3px;
+    }
+  }
 
   @media (min-width: 481px) {
     .pageContent {
@@ -158,33 +182,34 @@
         <!-- </font> -->
       </a>
 
-      <a href="https://www.linkedin.com/in/rorywmulcahey/" style="text-decoration: none;" target="_blank">
-        <!-- <b>LinkedIn</b> ➲ -->
-        <i class="fa fa-linkedin-square"></i>
-      </a>
-
-      <a href="https://github.com/rorymulcahey/" style="text-decoration: none;" target="_blank">
-        <!-- <b>GitHub</b> ➲ -->
-        <i class="fa fa-github-square"></i>
-      </a>
-
-      <a href="https://bitbucket.org/roardog/" style="text-decoration: none;" target="_blank">
-        <!-- <b>BitBucket</b> ➲ -->
-        <i class="fa fa-bitbucket-square"></i>
-      </a>
-
-      <a href="https://twitter.com/RoryMulcahey" style="text-decoration: none;" target="_blank">
-        <!-- <b>Twitter</b> ➲ -->
-        <i class="fa fa-twitter-square"></i>
-      </a>
-
-      <a href="https://stackoverflow.com/users/10039469/rory" style="text-decoration: none;" target="_blank">
-        <!-- <b>Stack Overflow</b> ➲ -->
-        <i class="fa fa-stack-overflow"></i>
-      </a>
+      <div class="social-buttons">
+        <a href="https://www.linkedin.com/in/rorywmulcahey/" style="text-decoration: none;" target="_blank">
+          <!-- <b>LinkedIn</b> ➲ -->
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+  
+        <a href="https://github.com/rorymulcahey/" style="text-decoration: none;" target="_blank">
+          <!-- <b>GitHub</b> ➲ -->
+          <i class="fa fa-github-square"></i>
+        </a>
+  
+        <a href="https://bitbucket.org/roardog/" style="text-decoration: none;" target="_blank">
+          <!-- <b>BitBucket</b> ➲ -->
+          <i class="fa fa-bitbucket-square"></i>
+        </a>
+  
+        <a href="https://twitter.com/RoryMulcahey" style="text-decoration: none;" target="_blank">
+          <!-- <b>Twitter</b> ➲ -->
+          <i class="fa fa-twitter-square"></i>
+        </a>
+  
+        <a href="https://stackoverflow.com/users/10039469/rory" style="text-decoration: none;" target="_blank">
+          <!-- <b>Stack Overflow</b> ➲ -->
+          <i class="fa fa-stack-overflow"></i>
+        </a>
+      </div>
+      <!-- <div class="col-xs-2 col-md-1"></div> -->
     </div>
-    <!-- <div class="col-xs-2 col-md-1"></div> -->
-
 
     <div class="col-1 textalign hideMobile">
       <a href="#home" style="text-decoration: none;">
