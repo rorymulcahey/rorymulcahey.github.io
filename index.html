@@ -71,7 +71,25 @@
     margin-right: 10px;
     width: 210px;
   }
-  
+
+  .social-buttons a:not(:first-child),
+  .social-buttons a:not(:first-child):visited {
+    color: #f8fafc;
+    background-color: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 7px;
+    transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  }
+
+  .social-buttons a:not(:first-child):hover {
+    color: #0f766e;
+    background-color: #ffffff;
+    transform: translateY(-1px);
+  }
+
+  .social-buttons a:not(:first-child) .fa {
+    color: currentColor;
+
   .fa {
     font-size: 1.5rem; 
   }  
