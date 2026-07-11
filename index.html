@@ -459,6 +459,16 @@
       border-radius: var(--radius) var(--radius) 0 0;
     }
 
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      max-width: 100%;
+      padding: 0 0.25rem;
+      font-size: 0.95rem;
+    }
+
     .footer a {
       color: var(--accent);
       font-weight: 700;
@@ -498,6 +508,19 @@
 
       .contact-row {
         display: block;
+      }
+      
+      .footer {
+        margin-top: 0.25rem;
+        padding: 0.75rem 0 1rem;
+      }
+    
+      .footer-inner {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+        text-align: center;
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -995,16 +1018,9 @@
     </div>
 
     <footer class="footer">
-      <div class="container-fluid">
-        <div class="row align-items-center gy-2">
-          <div class="col-md-8">
-            © 2026 Rory Mulcahey
-          </div>
-
-          <div class="col-md-4 text-md-end">
-            <a href="#home">GO TO TOP</a>
-          </div>
-        </div>
+      <div class="footer-inner">
+        <span>© 2026 Rory Mulcahey</span>
+        <a href="#home">Back to top</a>
       </div>
     </footer>
   </main>
